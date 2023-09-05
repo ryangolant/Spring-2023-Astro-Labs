@@ -1,0 +1,193 @@
+\documentclass[11pt]{article}
+\usepackage[includeheadfoot, top=1.0in, bottom=1.0in, hmargin=1.0in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{amsmath,amsfonts}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{amssymb}
+
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+
+\lhead{Astronomy Lab II}
+\rhead{Spring 2023}
+\lfoot{Mead \& Golant}
+\rfoot{Mon 7-10pm}
+\cfoot{\thepage}
+
+\begin{document}
+
+\begin{center}
+\huge{Lab 2: Exploring the Multiwavelength Universe}\\ \medskip \Large{January 31, 2022} \\ \medskip \Large{\textcolor{red}{Answer Key}}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%% INTRO %%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction: Let There Be Light}
+
+%%%%%%%%%%%%%%%%%%%%%%% LIGHT %%%%%%%%%%%%%%%%%%%%%%%
+\section{The Anatomy of a Light Wave}
+
+Let's think a little deeper about the electromagnetic spectrum. \textbf{Record your responses in your lab write-up}.
+\begin{enumerate}
+    \item \textcolor{blue}{3 pts} Note the huge range of wavelengths covered by the electromagnetic spectrum (Figure \ref{fig:spectrum}). By how many orders of magnitude is the wavelength of a long radio wave (around $10^2$ m) greater than the wavelength of a hard gamma ray (around $10^{-13}$ m)? 
+    \textcolor{red}{15 OoM}
+    
+    \item The electromagnetic spectrum is not just relevant in astronomy -- we experience almost all wavelengths of the spectrum in our daily lives. For each region of the EM spectrum (radio, microwave, IR, visible, UV, X-ray, gamma), list one or two sources of that type of light that we may find on Earth. (\textit{Hint}: this website has some fun examples: \url{https://imagine.gsfc.nasa.gov/science/toolbox/emspectrum1.html})
+    
+    \begin{enumerate}
+        \item \textcolor{blue}{1pts} \textcolor{red}{Radio: AM radio, Ametuer Radio, Aircraft communication}
+        \item \textcolor{blue}{1pts} \textcolor{red}{Microwave: Microwave oven}
+        \item \textcolor{blue}{1pts} \textcolor{red}{IR: TV Remote, Nightvision goggles}
+        \item \textcolor{blue}{1pts} \textcolor{red}{Visible: lightbulb}
+        \item \textcolor{blue}{1pts} \textcolor{red}{UV: Sun}
+        \item \textcolor{blue}{1pts} \textcolor{red}{X-ray: Airport security scanner}
+        \item \textcolor{blue}{1pts} \textcolor{red}{Gamma Rays: PET scanner, lightning}
+    \end{enumerate}
+    
+    \item \textcolor{blue}{10pts} The average human body cell is 100 $\mu m$ in diameter. Compare this to the typical wavelength of a radio wave and to the typical wavelength of a gamma ray. Why do you think gamma rays are harmful to humans but radio waves are not?
+    
+    \textcolor{red}{Radio waves are about 10-100 m, 6 OoM larger than a cell, gamma rays are $10^{-13}$ m, 9 OoM smaller than a cell. Gamma rays are small enough to interact with human cells.}
+    
+    \item \textcolor{blue}{4pts} At roughly what wavelength do you think the Sun emits most of its light?
+    
+    \textcolor{red}{Visible}
+    
+    \item Navigate to \url{https://javalab.org/en/electromagnetic_waves_en/}. In the applet window, you can click and drag the mouse up and down to explore different regions of the electromagnetic spectrum.
+    \begin{enumerate}
+        \item \textcolor{blue}{4pts} As you drag the burgundy arrow from the top of the spectrum (the radio range) to the bottom of the spectrum (the X-ray range), describe qualitatively what happens to the propagating wave.
+        
+        \textcolor{red}{The wavelength gets shorter}
+        
+        \item \textcolor{blue}{4pts} When the burgundy arrow is near the top of the spectrum, the wave appears stationary and flat. Why is this the case?
+        
+        \textcolor{red}{The wavelength is very long and even though it travels at the same speed as the others, the amplitude changes slowly due to the long wavelength}
+    \end{enumerate}
+    
+    \item Different wavelengths of light have different \emph{optical properties}, meaning that they behave differently when sent through a prism or lens or when bounced off a mirror. This fact forms the basis of the extremely important technique of \textbf{\emph{spectroscopy}}, which we will explore at length in the next lab. For now, navigate to \url{https://javalab.org/en/electromagnetic_waves_around_of_visible_rays_en/}. In the applet window, you can click and drag the mouse up and down to vary the wavelength of light passing through the prism.
+    \begin{enumerate}
+        \item \textcolor{blue}{3pts} Light is ``bent'' as it travels through a prism. As you vary the wavelength from long wavelengths to short wavelengths, how does the degree of bending vary? Are shorter wavelengths bent more than longer wavelengths, or vice versa?
+        
+        \textcolor{red}{Shorter wavelengths are bent more.}
+        
+        \item \textcolor{blue}{7pts} This simulation only shows a \emph{single} wavelength of light passing through the prism at any given time. If we instead sent ``white light'' (an equal mixture of all wavelengths) through the prism, what do you expect the light pattern emerging from the prism to look like? 
+        
+        \textcolor{red}{A spectrum/rainbow of light.  Each respective wavelength would be bent to their own respective degrees and thus the prism would separate the light.}
+        
+        \item \textcolor{blue}{4pts} If we were instead to shine \emph{starlight} through the prism, what could the resulting light pattern tell us about the star? (give your best guess -- we'll look at this in more detail next week)
+        
+        \textcolor{red}{Colors in the star. Chemistry.}
+        
+    \end{enumerate}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%% MULTIWAVELENGTH UNIVERSE %%%%%%%%%%%%%%%%%%%%%%%
+\section{The Multiwavelength Universe}
+
+\begin{enumerate}
+    %\setcounter{enumi}{6}
+    \item For each region of the electromagnetic spectrum, briefly describe what we can learn about the Antennae Galaxies by observing in this wavelength range. Additionally, briefly describe two astrophysical phenomena that emit this type of light. \textbf{Record these responses in your lab write-up}.
+    
+    \begin{enumerate}
+        \item \textcolor{red}{Radio: Can see spiral structure.  Produced by cold, high-density gas (star forming material) and cold dust (protoplanetary disks).}
+        \item \textcolor{red}{IR: Learn about low temperature stars and active regions of star formation. Can see through dust to stars at the center of galaxies.  Produced by low temperature stars and dust.}
+        \item \textcolor{red}{Visible: Can see star light, learn about structure of gas and stars. Produced by stars.}
+        \item \textcolor{red}{UV: Learn about high-mass star formation. Produced by high mass stars, the Sun's corona, nebulae}
+        \item \textcolor{red}{X-ray: Learn about neutron stars and gas around BHs. Produced by SNe, accreting BHs, NS, plasma around a galaxy cluster.}
+        \item \textcolor{red}{Gamma Ray: Learn about/produced by SNe, NS, BHs, AGN}
+    \end{enumerate}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%% TELESCOPES %%%%%%%%%%%%%%%%%%%%%%%
+\section{Why do we need so many telescopes?}
+
+\begin{enumerate}
+    %\setcounter{enumi}{7}
+    \item \textcolor{blue}{11pts} Just over a year ago, the brand new \textbf{James Webb Space Telescope} (JWST) was launched into space. Many news outlets have stated that JWST will ``replace'' the Hubble Space Telescope. Explain why this statement is not fully accurate. What telescope would it make more sense to label as the ``predecessor'' to JWST? Take a quick look at this JWST fact sheet: \url{https://jwst.nasa.gov/content/webbLaunch/assets/documents/WebbFactSheet.pdf}. Briefly describe two science cases that JWST will be focusing on.
+    
+    \begin{enumerate}
+        \item \textcolor{blue}{4pts} \textcolor{red}{Hubble observes in the visible and overlaps little with the EM range of JWST}
+        \item \textcolor{blue}{3pts} \textcolor{red}{A better predecessor is Spitzer}
+        \item \textcolor{blue}{4pts} \textcolor{red}{The first stars and galaxies - UV and visible light has been redshifted into the IR.  Study nearby planetary atmospheres to learn about chemical composition.}
+    \end{enumerate}
+    
+    
+    \item \textcolor{blue}{8pts} The Atacama Large Millimeter/submillimeter Array -- or \emph{ALMA} -- is an array of telescopes in Chile that has been revolutionary for the study of planet formation and the study of black hole structure. List one type of astronomical object that ALMA can see well and very briefly describe this object. Recently, the field of ``submillimeter'' astronomy has received increased attention for its ability to probe star formation and cosmology -- why do you think this field is called ``submillimeter'' astronomy?
+    
+    \begin{enumerate}
+        \item \textcolor{blue}{4pts} \textcolor{red}{ALMA can observe protoplanetary disks, dust, and molecular clouds}
+        \item \textcolor{blue}{4pts} \textcolor{red}{It is called submillimeter because the wavelength range is on the order of a millimeter or slightly less}
+    \end{enumerate}
+    
+    
+    \item \textcolor{blue}{11pts; 3,4,4} Choose at least one upcoming telescope or observatory from the list below and read a little bit about these telescopes. For each telescope, answer: What region(s) of the EM spectrum is this instrument specialized for? What's one science case that this instrument will address? How will this telescope improve on its predecessors?
+    \begin{itemize}
+        \item \underline{Vera C. Rubin Observatory}: 1) \url{https://www.lsst.org/content/rubin-observatory-general-public-faqs}; \, \, 2) \url{https://www.lsst.org/science}; \, \, 3) \url{https://www.lsst.org/about/fact-sheets}
+        
+        \item \underline{Nancy Grace Roman Space Telescope}: 1) \url{https://roman.gsfc.nasa.gov/faq.html}; \, \, 2) \url{https://roman.gsfc.nasa.gov/images/stsci/roman-capabilities-stars.pdf}; \, \, 3) \url{https://roman.gsfc.nasa.gov/images/stsci/roman-capabilities-galaxies.pdf}
+        
+        \item \underline{Square Kilometer Array}: 1) \url{https://www.skatelescope.org/the-ska-project/}; \, \, 2) \url{https://www.skatelescope.org/ska-prospectus/}; \, \, 3) \url{https://www.skatelescope.org/science/}
+        
+        \item \underline{Euclid}: 1) \url{https://sci.esa.int/web/euclid/-/summary}; \, \, 2) \url{https://sci.esa.int/web/euclid/-/fact-sheet}
+    \end{itemize}
+    
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%% ATMOSPHERE %%%%%%%%%%%%%%%%%%%%%%%
+\section{The Earth's atmosphere: Astronomy's greatest enemy}
+
+\begin{enumerate}
+    %\setcounter{enumi}{12}
+    \item \textcolor{blue}{9pts} In which wavelength ranges can light reach the surface of the Earth (i.e., an altitude of 0 km)? Referring back to the ``Wavelengths and Telescopes'' tab, what are some \textit{ground-based} telescopes that observe in these wavelength ranges? Where are these telescopes located? (\textit{Hint}: you can click on the telescope name to find the location)
+    
+    \begin{enumerate}
+        \item \textcolor{blue}{3pts} \textcolor{red}{Visible, radio, some UV and IR}
+        \item \textcolor{blue}{3pts} \textcolor{red}{Subaru, Keck, TMT, VLT, ALMA}
+        \item \textcolor{blue}{3pts} \textcolor{red}{Mountains and Deserts}
+    \end{enumerate}
+    
+    \item \textcolor{blue}{9pts} Which wavelengths are affected the most by the atmosphere? Referring back to the ``Wavelengths and Telescopes'' tab, what are some telescopes that observe at these wavelengths? Where are these telescopes located?
+    
+    \begin{enumerate}
+        \item \textcolor{blue}{3pts} \textcolor{red}{X-ray,UV, IR}
+        \item \textcolor{blue}{3pts} \textcolor{red}{Chandra, Suzaku, Swift, Hinode, JWST, Spitzer, Herschel}
+        \item \textcolor{blue}{3pts} \textcolor{red}{Space}
+    \end{enumerate}
+    
+    \item \textcolor{blue}{4pts} Many ground-based telescopes, like the Subaru Telescope and the Keck Observatory, are built on the summits of very tall mountains. Why is the top of a mountain an optimal location for a telescope? (\textit{Hint}: think about the air quality on top of a mountain vs. the air quality at lower altitudes)
+    
+    \textcolor{red}{Above more air, cooler so less turbulence, cleaner air quality}
+    
+    \item \textcolor{blue}{4pts} Many ground-based telescopes, like ALMA and ACT, are built within extremely dry deserts. Why is a desert an optimal location for a telescope? (\textit{Hint}: think about the air quality in a desert vs. the air quality in a moister environment)
+    
+    \textcolor{red}{Dryer air means less turbulence, water does not absorb or scatter as much light.}
+    
+    \item \textcolor{blue}{4pts} What are some benefits of space-based telescopes, like Hubble and James Webb? What might be some drawbacks?
+    
+    \textcolor{red}{No atmospheric interference/absorption. Drawbacks: In space, hard to service.}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%% CONCLUSIONS %%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+
+Complete this section by yourself. \textbf{Record your responses in your lab write-up}.
+\begin{enumerate}
+    %\setcounter{enumi}{20}
+    \item \textcolor{blue}{4pts} Provide a qualitative description of the electromagnetic spectrum. How does the wavelength of light tie into the electromagnetic spectrum?
+    
+    \item \textcolor{blue}{4pts} Briefly explain the importance of observing the Universe in multiple wavelengths. 
+    
+    \item \textcolor{blue}{4pts} Why do we need so many different telescopes? Why do we need both space telescopes and ground telescopes?
+    
+    \item \textcolor{blue}{4pts} With the coming decades promising rapid advancements in telescopes, detectors, and observatories of all types, the pursuit of \textbf{``multi-messenger''} astronomy -- the combination of observations from electromagnetic radiation, gravitational waves, neutrinos, and cosmic rays to achieve a common scientific goal -- is quickly reaching maturity. Based on what we've covered in this lab, why do you think multi-messenger astronomy is important? What discoveries will we be able to make with multi-messenger observations that we couldn't have made with just observations of light?
+    
+    \item Write down at least one question that you still have after finishing this lab.
+    
+\end{enumerate}
+
+\end{document}

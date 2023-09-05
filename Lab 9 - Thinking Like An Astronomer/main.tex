@@ -1,0 +1,133 @@
+\documentclass[11pt]{article}% uses letterpaper by default
+
+%---------- Uncomment one of them ------------------------------
+\usepackage[includeheadfoot, top=1in, bottom=1in, hmargin=1in]{geometry}
+
+% \usepackage[a5paper, landscape, twocolumn, twoside,
+%    left=2cm, hmarginratio=2:1, includemp, marginparwidth=43pt, 
+%    bottom=1cm, foot=.7cm, includefoot, textheight=11cm, heightrounded,
+%    columnsep=1cm, dvips,  verbose]{geometry}
+%---------------------------------------------------------------
+\usepackage{fancyhdr}
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{cancel}
+\pagestyle{fancy}
+\usepackage{graphicx}
+\usepackage{setspace}
+\singlespacing
+%\doublespacing
+%\onehalfspacing
+\usepackage{varwidth}
+\usepackage{hyperref}
+
+\newcommand{\degrees}{\ensuremath{^\circ}}
+\newcommand{\arcmin}{\ensuremath{'}}
+\newcommand{\arcsec}{\ensuremath{"}}
+\newcommand{\hours}{\ensuremath{^\mathrm{h}}}
+\newcommand{\minutes}{\ensuremath{^\mathrm{m}}}
+\newcommand{\seconds}{\ensuremath{^\mathrm{s}}}
+
+\newcommand{\s}[0]{\phantom{i}} %sets up \s command
+\newcommand{\m}[0]{\phantom{abcde}} %sets up \m command
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}} %sets up \e command
+\setlength{\parindent}{0.2in} %new paragraph indent
+\usepackage{indentfirst} % indent the first paragraph of a section
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\lhead{Astronomy Lab II}
+\rhead{Spring 2023}
+\lfoot{Golant \& Mead}
+\rfoot{Tues 7-10pm}
+\cfoot{\thepage}
+
+%\newcommand{\exercisename}{7}
+\begin{document}
+
+\begin{center}
+\huge{Lab 9: Thinking Like An Astronomer}\\ \medskip \Large{April 4, 2023}
+\end{center}
+
+\section{Introduction: Inquire Within}
+
+\noindent The \href{https://eric.ed.gov/?id=ED391690}{National Research Council} defines the process of \textbf{inquiry} to include:
+\begin{itemize}
+    \item Asking questions
+    \item Planning and conducting investigations
+    \item Using appropriate tools and techniques to gather data
+    \item Thinking critically and logically about relationships between evidence and explanations
+    \item Constructing and analyzing alternative explanations
+    \item Communicating scientific arguments
+\end{itemize}
+In essence, the process of inquiry describes the thinking process of a scientist and the path to the generation of new knowledge. Once one question has been answered, the process repeats, cyclically, as new questions arise. 
+
+Throughout this course, we've engaged piecemeal with a number of steps in the inquiry process: we've asked open-ended questions, collected and analyzed data, thought about the relationship between data and evidence, and drawn conclusions based on evidence. In this lab, however, we'll be completing a \emph{full} cycle of inquiry, from questions to conclusions to communication. With an assigned partner, you'll be formulating your own research question, exploring that question, and presenting your findings to the class. In other words, you'll be completing a mini research project!
+
+It’s important to note that the inquiry process is not always successful -- scientists hit dead ends all the time in their research, either due to lack of sufficient data, insufficient quality of data, technological barriers, budget or time constraints, or other factors. So, definitely don’t be discouraged if your mini research project hits a dead end or if you’re unable to fully answer your research question -- that’s just part of the process of doing science!
+
+\section{Conducting your investigation}
+
+\begin{enumerate}
+    \item You’ll need data in order to conduct your inquiry. We've provided \textbf{three data sets} that you've seen before in class:
+    \begin{itemize}
+        \item A spreadsheet of the 50 brightest stars and a spreadsheet of the 50 nearest stars (found on CourseWorks under Files/Lab 9/stars\_final.xlsx), similar to the spreadsheets used in Lab 4 (``Stars \& Stellar Evolution”). This new spreadsheet contains some data that was not on the Lab 4 sheet, like the distances, radii, ages, and rotational velocities of stars. Additional data can be found on the Wikipedia pages for the \href{https://en.wikipedia.org/wiki/List_of_brightest_stars}{brightest stars} and for the \href{https://en.wikipedia.org/wiki/List_of_nearest_stars_and_brown_dwarfs}{nearest stars}.
+        \item \href{https://www.zooniverse.org/projects/zookeeper/galaxy-zoo}{Galaxy Zoo} (\url{https://tinyurl.com/galaxy-zoo}), as used in Lab 5 (``Galaxies”). In the time since we completed Lab 5, the \href{https://mwalmsley-galaxy-poster-gz-decals-mike-walmsley-3pax35.streamlit.app/}{full data set} (\url{https://tinyurl.com/2s3uzy2n}) for Galaxy Zoo has been made available; if you're interested in using this data set, let the instructors know so that we can give you a quick tutorial.
+        \item \href{https://exoplanetarchive.ipac.caltech.edu/}{The NASA Exoplanet Archive} (\url{https://tinyurl.com/exoplanet-archive}), as used in Lab 7 (``Exoplanets”). This website contains an abundance of data on all properties of exoplanets, as well as some interactive plotting tools.
+    \end{itemize}
+    \textbf{Pick one of these data sets} and spend a few minutes re-familiarizing yourself with the data and with the interface.
+
+    (A caveat: while each of these data sets is fine for conducting research, the NASA Exoplanet Archive is substantially more robust than the other two data sets, so the range of questions you may be able to answer with the Exoplanet Archive is likely significantly broader than the range of questions you’ll be able to answer with the stars data set and with Galaxy Zoo. That said, if you’re interested in stars or galaxies, don’t let this deter you from exploring a question related to stars or galaxies; the instructors may be able to provide supplementary data to aid in your inquiry.)
+
+    \item Formulate an \textbf{open-ended research question} that could feasibly be answered using the data in the data set that you have chosen. Be sure to \textbf{get your question approved by the lab instructors} so that we can determine whether your question is reasonable and whether there's additional data we can provide.
+
+    \item Turn your research question into a \textbf{hypothesis} -- that is, make a statement about what you predict to be the answer to your question (and why). 
+
+    \item What \textbf{evidence} would you require to defend or refute your hypothesis? Make a list of at least 2 pieces of evidence that would support your hypothesis and at least 2 pieces of evidence that would contradict your hypothesis.
+
+    \item Write out a brief \textbf{plan or procedure} for collecting data, analyzing data, and drawing conclusions from data. A list of a few steps is sufficient, but make sure that the steps are clear enough that someone else could replicate your procedure.
+
+    \item \textbf{Collect and analyze data} relevant to your research question. Where appropriate, visualize your data using graphs (e.g., scatter plots, line plots, bar charts, etc.), tables, photos, and/or diagrams; include these visualizations in your lab write-up. Note that not all data provides useful evidence (for or against your hypothesis), so you’ll have to be discerning with the data you choose to analyze.
+
+    \item 
+    \begin{enumerate}
+        \item What \textbf{biases} are present in the data set you’re using? 
+        \item If the data set is somehow incomplete or unrepresentative of the whole Universe, what additional data would you require to complete the data set and to level out the biases?
+    \end{enumerate}
+
+    \item 
+    \begin{enumerate}
+        \item Based on the evidence you’ve collected, \textbf{draw a generalized conclusion} pertaining to your research question. It’s important that this conclusion comes purely from the data (i.e., not from prior knowledge or from external resources), even if you think the data is pointing you in the “wrong” direction; when conducting scientific inquiry, the data is paramount.
+        \item How confident are you in this conclusion (keeping in mind the limitations and biases inherent in the data set)?
+        \item Come up with at least one alternative conclusion/generalization that explains the evidence you’ve collected.
+    \end{enumerate}
+
+    \item Come up with a \textbf{plan for future investigation} into your research question. That is, given more time and resources, how would you improve on your results? Use the following questions to guide your answer:
+    \begin{enumerate}
+        \item If you didn’t have sufficient data to make a strong conclusion, what other data would you need to collect?
+        \item If other questions arose while conducting your inquiry, how would you address those questions in future work? Consider both questions that are pre-requisite to answering your main question and questions that build off of your main question.
+        \item If you were to conduct this inquiry again (perhaps with a more robust data set), would you alter your procedure? How and why?
+    \end{enumerate}
+
+    \item Prepare a \textbf{3-5 minute presentation} summarizing your process of inquiry. Be sure to include your research question, your procedure, your data visualizations and analysis, your conclusion(s), and your plans for future investigation, in addition to a summary of what you learned from the process and what challenges you came across during the process. The format of your presentation is flexible, as long as it effectively communicates your experience -- so, feel free to get creative!
+\end{enumerate}
+
+
+\section{Wrapping things up}
+\begin{enumerate}
+\setcounter{enumi}{10}
+
+\item What did you learn from this lab (either about astronomy, about the process of science, or about yourself as a scientist)?
+
+\item What did you find most enjoyable about this lab?
+
+\item What did you find most challenging about this lab?
+
+\item How could we improve this lab for future classes?
+ 
+\end{enumerate}
+
+
+\end{document}
+

@@ -1,0 +1,207 @@
+\documentclass[11pt]{article}
+\usepackage[includeheadfoot, top=1.0in, bottom=1.0in, hmargin=1.0in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{amsmath,amsfonts}
+
+\lhead{Astronomy Lab II}
+\rhead{Spring 2022}
+\lfoot{Golant}
+\rfoot{Tue 6-9pm}
+\cfoot{\thepage}
+
+\begin{document}
+
+\begin{center}
+\huge{Lab 1: Orders of Magnitude}\\ \medskip \Large{January 25, 2022}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%% INTRODUCTION %%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction: An Astronomical Undertaking}
+
+The Earth has a mass of about 6 \emph{septillion} kilograms -- that's 6 followed by \emph{24} zeros. The Sun's mass is about 300,000 times that. And a typical galaxy weighs in at about 100 \emph{billion} Suns. Better yet, a large galaxy cluster can contain up to \emph{1,000} galaxies. That's a lot of mass.
+
+It's not a coincidence that, in colloquial English, the word ``astronomical'' is synonymous with ``\emph{very very large}.'' In astronomy, we study an extremely wide range of scales, from the tiniest electron to the largest cluster of galaxies. As such, we need some type of mathematical framework for dealing with very big (and very small) numbers -- this framework is called \textbf{scientific notation} (a remarkably generic name). 
+
+In this lab, you will learn how to carry out astronomical calculations using \emph{scientific notation}, how to properly represent astronomical measurements with \emph{units}, and how to understand the vastness of the Universe in terms of \emph{orders of magnitude}. This lab will provide you with the basic quantitative skills required to be an amateur astronomer.
+
+\bigskip
+
+\section{Scientific Notation}
+When writing big numbers -- like 340,000,000 -- or small numbers -- like 0.000034 -- writing out all the zeros can be cumbersome. Scientific notation ameliorates this issue by representing numbers in terms of \textbf{powers of ten}. If we wish to write 100,000 (or 1 followed by 5 zeros) in a more compact way, we can do so by writing $10^5$ -- in words, we'd pronounce this as ``10 to the power of 5,'' or ``10 to the fifth power.'' So, we could write 340,000,000 in scientific notation as $3.4 \times 10^8$ -- multiplication by ``10 to the eighth power'' shifts the decimal point in $3.4$ to the \emph{right} by 8 places. Similarly, we can use a \emph{negative} power of ten to shift the decimal place to the \emph{left}: $0.000034$ can be written as $3.4 \times 10^{-5}$, or ``3.4 times 10 to the negative fifth power.'' When a number is written in scientific notation, we often refer to the leading number (e.g., 3.4 in the examples above) as the \textbf{coefficient} and the power of ten as the \textbf{order of magnitude}. For instance, $4.5 \times 10^{11}$ has a coefficient of 4.5 and an order of magnitude of 11; this number is 3 orders of magnitude \emph{greater} than $3.7 \times 10^8$, and 5 orders of magnitude \emph{less} than $1.11 \times 10^{16}$.
+
+\bigskip
+
+To apply our understanding of powers of ten, let's try a few short practice problems. \textbf{Record your solutions to these problems in your lab write-up} -- remember to always show your work and justify your answer!
+\begin{enumerate}
+    \item The mass of the Earth is $5.97 \times 10^{24} \, {\rm kg}$ (kg = kilograms). What is the order of magnitude of this number? The mass of the Milky Way is about $6 \times 10^{42} \, {\rm kg}$ -- by how many orders of magnitude is the mass of the Milky Way greater than the mass of the Earth? How many times do we need to multiply the mass of the Earth by 10 in order to reach the order of magnitude of the mass of the Milky Way? Why should we be thankful for scientific notation when writing out these big numbers?
+    
+    \item The average radius of a hydrogen atom is about $5.3 \times 10^{-11} \, {\rm m}$ (m = meters); the average radius of a lithium atom is about $1.1 \times 10^{-10} \, {\rm m}$. Which atom is larger? What is the order of magnitude difference between the size of a hydrogen atom and the size of a lithium atom? 
+    
+    \item The age of the Sun is $4.6 \times 10^9 \, {\rm yr}$ (yr = years); the age of the next closest star to us, Proxima Centauri, is $485 \times 10^{7} \, {\rm yr}$. Which star is older? 
+\end{enumerate}
+
+\bigskip
+
+Problem 3 may have confused you a bit -- this is because the age of Proxima Centauri was written \emph{incorrectly} in scientific notation. When you write a number in scientific notation, the coefficient should always have only \emph{one} digit to the left of the decimal point; this standardizes the definition of ``order of magnitude'' and makes it easier to compare measurements expressed in scientific notation. If we can only have one digit to the left of the decimal point, how many digits can we have to the \emph{right} of the decimal point? This is specified by the number of \textbf{significant figures} (or ``sig figs,'' if you're in a hurry). 
+
+If we want to write a number with three significant figures, then we should have one digit to the left of the decimal and two to the right (for a total of three digits). Similarly, a number with only one significant figure will have only one digit to the left of the decimal and \emph{nothing} after the decimal. $3.4578 \times 10^9$ has five sig figs, while $3.5 \times 10^9$ has two sig figs and $3 \times 10^9$ only has one sig fig. It's important to keep significant figures in mind when reporting measurements, since your measuring tool may not be precise enough to justify many sig figs -- for example, if your ruler only has markings at each centimeter, it would be more proper to cite a measurement of 3.5 cm than to cite a measurement of 3.48825 cm (the ruler is definitely not precise enough to give you a measurement to six significant figures). Usually, keeping two or three significant figures is enough (and often more correct).
+
+\bigskip
+
+Let's try some problems involving scientific notation and significant figures. \textbf{Record your solutions in your lab write-up.}
+\begin{enumerate}
+    \item The age of the Universe is thought to be around $13787 \times 10^{6}$ years. How many significant figures does this measurement have? Write this number in proper scientific notation using \emph{three} significant figures. Write the number again in scientific notation using \emph{two} significant figures. (hint: when reducing the number of sig figs, you'll need to \emph{round} the original measurement to the appropriate number of decimal places) 
+    
+    \item The speed of light in empty space is 299,792,458 m/s (m/s = meters per second). Write this measurement in scientific notation to \emph{three} significant figures (hint: zeros count as significant figures!). What is the order of magnitude of this number?
+    
+    \item The ratio of the mass of the Earth to the mass of Jupiter is 0.003146. Write this number in scientific notation to \emph{four} significant figures. How many orders of magnitude smaller than the mass of Jupiter is the mass of the Earth?
+    
+    \item Your friend is writing a scientific paper about her cat. In her manuscript, she reports her cat's mass to be 4.536782 kg. Why might you be skeptical of this measurement? What additional information (e.g., about the equipment used to make this measurement) could your friend include in her paper that would make this number more believable? Write the cat's mass using three significant figures.
+\end{enumerate}
+
+\bigskip
+
+\subsection{Arithmetic with scientific notation}
+Scientific notation gives us a convenient means of compactly writing big numbers and small numbers. By comparing orders of magnitude, scientific notation also gives us a quick and easy way of determining how big (or how small) one measurement is compared to another. In a similar vein, scientific notation can simplify arithmetic, especially when doing calculations involving numbers with differing orders of magnitude. Here are some quick rules about arithmetic with scientific notation:
+\begin{itemize}
+    \item When \textbf{multiplying} two numbers in scientific notation, we \emph{multiply} the coefficients but \emph{add} the orders of magnitude. For example:
+    \begin{equation}
+        (3.4 \times 10^9) \times (5.8 \times 10^4) = (3.4 \times 5.8) \times 10^{9 + 4} = 19.72 \times 10^{13} = 1.972 \times 10^{14} = \boxed{2.0 \times 10^{14}}. 
+    \end{equation}
+    Note that the product $19.72 \times 10^{13}$ was not in proper scientific notation, so I had to slightly adjust my answer. I also rounded my final answer to two significant figures -- usually, when multiplying or dividing numbers in scientific notation, it's proper to write your final answer using the \emph{least} number of sig figs that appear in the original numbers (in this case, $3.4 \times 10^9$ and $5.8 \times 10^4$ each had two sig figs, so the least number of sig figs appearing in the original numbers was two. If, instead, we had started with $3 \times 10^9$ and $5.8 \times 10^4$, our final answer should have had only \emph{one} sig fig).
+    
+    \item When \textbf{dividing} two numbers in scientific notation, we \emph{divide} the coefficients but \emph{subtract} the orders of magnitude. For example:
+    \begin{equation}
+        \frac{3.4 \times 10^9}{5.8 \times 10^4} = \frac{3.4}{5.8} \times 10^{9-4} = 0.586 \times 10^5 = 5.86 \times 10^4 = \boxed{5.9 \times 10^4}.
+    \end{equation}
+    Again, I had to adjust my final answer to be in proper scientific notation, and I rounded to two significant figures to match the least number of sig figs appearing in the original numbers.
+    
+    \item When \textbf{adding} or \textbf{subtracting} two numbers in scientific notation, we simply add/subtract the coefficients. \textbf{However}, we can only add or subtract these numbers if they're multiplied by the same power of 10 -- otherwise, we need to adjust the powers of 10 to match. For example:
+    \begin{equation}
+        (3.4 \times 10^9) + (4.2 \times 10^8) = (3.4 \times 10^9) + (0.42 \times 10^9) = 3.82 \times 10^9 = \boxed{3.8 \times 10^9}.
+    \end{equation}
+    Note how I had to rewrite $4.2 \times 10^8$ as $0.42 \times 10^9$ to get the power of 10 to match with $3.4 \times 10^9$ -- only then could I properly add the two numbers. I also rounded the final answer to include only \emph{one} digit to the right of the decimal point -- when adding or subtracting numbers in scientific notation, it's usually proper to write your final answer using the \emph{least} number of decimal digits that appear in the original number (in this case, $3.4 \times 10^9$ and $4.2 \times 10^8$ each only had one digit to the right of the decimal, so our final answer also had only one digit to the right of the decimal. If we had instead started with $3.42 \times 10^9$ and $4.23 \times 10^8$, our final answer should have had \emph{two} digits to the right of the decimal).    
+\end{itemize}
+
+The sig fig rules ensure that our final answer is only as precise as our \emph{least} precise measurement. If you forget these rules, it's usually fine to just keep your final answer to one or two sig figs -- it's better to have too few significant figures (i.e., less precision) than too many. 
+
+\bigskip
+
+Now that we know how to do some math with scientific notation, let's try some problems. \textbf{Record your solutions in your lab write-up}. Be sure to show the intermediate steps of your arithmetic!  
+\begin{enumerate}
+    \item Light travels at a speed of $1.8 \times 10^7$ kilometers per minute. The average distance from the Earth to the Sun is $1.5 \times 10^8$ kilometers. Find the time (in minutes) that it takes light to travel from the Sun to the Earth by \emph{dividing} the Earth-Sun distance by the speed of light. Give your answer in scientific notation with the proper number of significant figures. If the Sun were to suddenly stop emitting light, how long would it take us (on Earth) to notice this? 
+    
+    \item Cosmic voids -- the emptiest regions in the Universe -- have densities lower than $8 \times 10^{-28}$ kilograms per cubic meter. Voids can also be extremely large. Taking the volume of a void to be $4 \times 10^{56}$ cubic meters, find the total amount of mass (in kilograms) contained in a typical void by multiplying the density by the volume. Express your answer in scientific notation with the proper number of significant figures. On Earth, the density of dry air at sea level is 1.2 kilograms per cubic meter. By how many orders of magnitude is the density of air greater than the density in cosmic voids?
+    
+    \item The speed at which the Earth orbits around the Sun depends on the \emph{sum} of the Earth's mass and the Sun's mass. The mass of the Earth is $5.972 \times 10^{24} \, {\rm kg}$ and the mass of the Sun is $1.989 \times 10^{30} \, {\rm kg}$. Add these two masses together and express your answer in scientific notation with the proper number of significant figures. Does the mass of the Earth play a significant role in determining the Earth's orbital speed around the Sun?
+\end{enumerate}
+
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%% UNITS %%%%%%%%%%%%%%%%%%%%%%%
+\section{Units}
+If someone tells you that the height of a tree is ``6,'' you might be a little confused -- is the height 6 feet? 6 meters? 6 inches? 6 light-years? Whenever you report a measurement, you \emph{must} cite the \textbf{units} -- class is not 3 long, it's 3 \emph{hours} long. Without units, a measurement is completely ambiguous. 
+
+In the physical sciences, we often use the ``International System'' of units, or the ``SI'' system. In the SI system, the typical unit of mass is the kilogram (kg), the typical unit of length is the meter (m), and the typical unit of time is the second (s). These units are fine in many cases, but may not always be the most convenient -- what if we instead wanted to measure time in years? Or distance in megaparsecs? Or mass in grams? In these cases, we must \textbf{convert} the units of our measurement, or perform a ``unit conversion.''
+
+A nice trick for converting units is to multiply the original value by a ``conversion factor'' that's equal to one. For instance, since 365 days is equivalent to 1 year, the conversion factor $\frac{1 \, {\rm year}}{365 \, {\rm days}}$ is equal to one. So, if we wanted to convert a measurement of 30 days to units of years, we would do
+\medskip
+\begin{equation}
+    30 \, {\rm days} = (30 \, {\rm days}) \times \left(\frac{1 \, {\rm year}}{365 \, {\rm days}}\right) = \frac{(30 \, {\rm days}) \times (1 \, {\rm year})}{365 \, {\rm days}} = \frac{30}{365} \, {\rm years} = \boxed{8.2 \times 10^{-2} \, {\rm years}}.
+\end{equation}
+\medskip
+Notice that, because ``days'' appears on both the top and the bottom of the fraction, that unit \emph{cancels out}, just like if we were dividing an ordinary number by itself. It's very important that you always set up your conversion factor such that this cancellation occurs. Here's another example, where we convert $3 \times 10^8$ meters per second (m/s, a unit of speed or \emph{velocity}) to meters per hour:
+\medskip
+\begin{align}
+    3 \times 10^8 \, {\rm m/s} = \left(\frac{3 \times 10^8 \, {\rm m}}{1 \, {\rm s}}\right) \times \left(\frac{3600 \, {\rm s}}{1 \, {\rm hr}}\right) = \frac{(3\times 10^8 \, {\rm m}) \times (3600 \, {\rm s})}{\rm (1 \, s) \times (1 \, hr)} &= \frac{3 \times 10^8 \times 3600}{\rm 1} \frac{\rm m}{\rm hr} \nonumber \\ &= \frac{1 \times 10^{12}}{1} \frac{\rm m}{\rm hr} = \boxed{1 \times 10^{12} \, {\rm m/hr}}. 
+\end{align}
+\medskip 
+Note how I wrote $3 \times 10^8 \, {\rm m/s}$ as a fraction, and then constructed the conversion factor $\frac{\rm 3600 \, s}{\rm 1 \, hr}$ such that the units of seconds (s) canceled out. When carrying out a unit conversion, I strongly recommend writing the units explicitly as fractions to help keep track of which units cancel and which units end up in your final answer. As a final example, let's convert 1.48 inches/year to feet/decade, which will require \emph{two} conversion factors -- here, I'll slash through the units that cancel out:
+\medskip
+\begin{equation}
+    1.48 \, {\rm inches/year} =  \frac{1.48 \, \cancel{\mathrm{inches}}}{1 \, \cancel{\mathrm{year}}} \times \frac{1 \, \mathrm{foot}}{12 \, \cancel{\mathrm{inches}}} \times \frac{10 \, \cancel{\mathrm{years}}}{1 \, \mathrm{decade}} = \frac{1.48 \times 10}{12} \frac{\rm feet}{\rm decade}= \boxed{1.23 \, {\rm feet/decade}}.
+\end{equation}
+\bigskip
+
+Unit conversion can be tricky when you first start out, but practice makes perfect! To get some practice with unit conversions, let's do some problems. \textbf{Record your solutions in your lab write-up}. Be sure to show your work!
+\begin{enumerate}
+    \item Before going any further, go back to your solutions to the previous problems and make sure you've included the proper \textbf{units} in your answers (where appropriate). Remember, a measurement without the proper units is meaningless!
+    
+    \item The distance between us and the Andromeda Galaxy is $7.7 \times 10^5$ pc (pc = parsec). 1 parsec is equivalent to $3.09 \times 10^{13}$ kilometers. What is the distance to the Andromeda Galaxy in units of \emph{kilometers}? 1 parsec is also equivalent to $3.26 \, {\rm ly}$ (ly = light years). What is the distance to the Andromeda Galaxy in units of \emph{light years}? How many kilometers are in a light year? 
+    
+    \item The average distance between the Earth and the Sun is defined as the \emph{Astronomical Unit} (or AU), which is equivalent to $1.496 \times 10^8 \, {\rm km}$. The average distance between the Sun and Jupiter is around $5.2$ AU -- what is the Jupiter-Sun distance in \emph{kilometers}?   
+    
+    \item The average speed at which the Earth orbits the Sun is around 29.8 km/s. What is the Earth's orbital speed in km/yr? What is the Earth's orbital speed in AU/yr? (1 yr = $3.15 \times 10^7 \, {\rm s}$).
+    
+    \item (\textbf{Note}: this is a tricky problem) The Hubble constant, which tells us how fast the Universe is expanding, is commonly written with the weird units ``kilometers per second per megaparsec'' (or $\frac{\rm km/s}{\rm Mpc}$; 1 Mpc = $10^6$ pc). Convert $70 \, \frac{\rm km/s}{\rm Mpc}$ to units of $\frac{\rm km/s}{\rm km}$, which is equivalent to 1/s. You can obtain a rough estimate for the age of the Universe (in seconds) by taking the \emph{reciprocal} of your answer (i.e., by dividing 1 by your answer). What do you get for the age of the Universe? What is this value in \emph{years}, rather than in seconds?  
+\end{enumerate}
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%% SCALING THE UNIVERSE %%%%%%%%%%%%%%%%%%%%%%%
+\section{Scaling the Universe}
+
+Let's apply what we've learned so far to construct a \emph{scale model} of the Universe. Let's scale the diameter of the Sun ($1.39 \times 10^6$ kilometers) down to the size of a ballpoint pen tip (1.00 millimeter) to get a sense of just how large the Universe really is. \textbf{Record your solutions in your lab write-up}.
+
+\begin{enumerate}
+    \item First, let's set up the \emph{scale factor}, $F$, that'll connect our scale model to the real thing. The tip of a ballpoint pen is $F$ times \emph{smaller} than the Sun, so $$R_{\rm pen} = F \times R_{\rm sun}.$$ As such, find $F$ (to three significant figures) by dividing the size of the pen tip by the size of the Sun. Make sure that your units are consistent when dividing! (1 km = $10^6$ mm)
+    
+    \item Now, scale down the following distances by multiplying by the scale factor, $F$.
+    \begin{enumerate}
+        \item The distance from the Sun to the Earth (1.0 AU) 
+        \item The distance from the Sun to Jupiter (5.2 AU)
+        \item The distance to the edge of the Solar System ($1 \times 10^5$ AU)
+        \item The distance to the nearest star (4.25 ly)
+        \item The distance to the center of the Milky Way (8 kiloparsecs)
+        \item The distance to the Andromeda Galaxy (0.89 megaparsecs)
+        \item The distance to the edge of the observable Universe ($4.65 \times 10^{10}$ ly)
+    \end{enumerate}
+    
+    \item What are some familiar real-world distances that you can compare each scaled quantity to (e.g. the length of Manhattan, the distance from New York City to Los Angeles, the circumference of the Earth)?
+\end{enumerate}
+
+\bigskip
+
+\section{Fermi Estimation (if we have time)}
+Throughout this lab, we've talked a good bit about significant figures and the \emph{precision} of measurements. But, in many problems, all we really need is a rough estimate of the answer -- the order of magnitude alone can tell us a fair amount about the problem at hand (as we've discussed, comparing orders of magnitude is a quick and easy way of getting a feel for how big or how small a quantity is). In the process of \textbf{\emph{Fermi estimation}} (also, aptly, called \emph{order-of-magnitude} estimation), we seek to estimate (usually to only one significant figure) the answer to a problem by using rough, intuitive arithmetic rather than fully rigorous calculations. For instance, if we wanted to Fermi estimate the number of jelly beans in a jar, we shouldn't need to rigorously compute the volume of each bean and the spacing between each bean -- we can make some simplifying assumptions about the shape of the beans (i.e., we can estimate the beans as being spherical) and about the geometry of the bean pile (i.e., we can estimate the beans as being in a simple lattice pattern) and use these assumptions to obtain a rough order-of-magnitude estimate for the number of beans.
+
+\bigskip 
+
+Fermi estimation is a difficult skill to perfect, but it's a very important tool for developing quantitative intuition. So, let's try a few examples. \textbf{Record your solutions in your lab write-up}. \textit{Show your work and be explicit about your assumptions.} Don't worry about your estimations being exactly right -- the thought process is what counts.
+\begin{enumerate}
+    \item In an act of rebellion against your poor lab instructor, you declare scientific notation to be useless and decide to write out $10^{\rm one \, billion}$ (that's 1 followed by one \emph{billion} zeros) in its entirety. Assuming you're using a standard word processor with 12 pt font and 1 inch margins, estimate how many sheets of $8.5'' \times 11''$ paper you'd need to fully write out $10^{\rm one \, billion}$. Give your answer to one significant figure. If you placed all these sheets of paper in a single stack, approximately how tall (in meters, to one significant figure) would that stack be? 
+    
+    \item The main Columbia campus extends from 114th street to 120th street, between Broadway and Amsterdam Avenue. Assuming there are no buildings or other obstructions in this rectangle, approximately how many people could fit into Columbia's main campus (without needing to stack people on top of one other)? 
+    
+    \item Read a little bit about the \textbf{Drake equation} online and explain how this could be framed as a Fermi estimation problem. Using the Drake equation, provide an order-of-magnitude answer to this Fermi problem (you may use numbers from Wikipedia or from other websites). 
+    
+    \item Come up with your own Fermi estimation problem and write out a short solution!
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%% CONCLUSIONS %%%%%%%%%%%%%%%%%%%%%%%
+\section{Wrapping things up}
+
+Complete this section by yourself. \textbf{Record your responses in your lab write-up}. 
+\begin{enumerate}
+    \item Why is scientific notation useful in astronomy (and in quantitative disciplines in general)?
+    
+    \item Describe qualitatively what an ``order of magnitude'' is. Why do we care about orders of magnitude?
+    
+    \item Why is it important to include units when you report a measurement? When might one want to perform a unit conversion?
+    
+    \item Write down at least one question that you have after finishing this lab. I will try to answer these questions at the beginning of the next class. 
+    
+    \item Please provide some feedback on how today's lab session was run/organized. What worked well? What could I do to make future lab sessions better? What do you hope to get out of this class, and how can I structure my teaching to facilitate this? I want to make this class the best possible experience for the students -- do you have any (realistic) suggestions/recommendations/requests that would help me achieve this?
+\end{enumerate}
+
+\end{document}
+
